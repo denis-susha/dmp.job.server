@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <UserSecretsId>9d7b814d-d8af-45a1-b854-d37fc50ea35d</UserSecretsId>
+    <!-- RazorLight compiles e-mail templates at runtime and needs the reference assemblies. -->
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.AspNetCore" />
+    <PackageReference Include="Hangfire.PostgreSql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DMP.BL\DMP.BL.csproj" />
+  </ItemGroup>
+
+</Project>
